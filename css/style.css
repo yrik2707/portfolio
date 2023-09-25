@@ -1,0 +1,259 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Чтобы выровнять элементы по вертикали */
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 12px;
+    width: 1376px;
+    height: 108px;
+    flex-shrink: 0;
+}
+nav {
+    width: 98px;
+    height: 108px;
+    margin-left: 861px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 17px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+} 
+
+.phone-number {
+    margin-left: 207px;
+    width: 140px;
+    height: 21px;
+    margin-bottom: 62px;
+/* text/large */
+    
+    font-size: 18px;
+    
+}
+.hero {
+    width: 1376px;
+    height: 1107px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    /* background-color: brown ; */
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 52px;
+}
+
+
+
+
+.hero-text-1 {
+    grid-column: 1; /* Размещаем в первой колонке */
+    grid-row: 1; /* Размещаем в первой строке */
+    width: 794px;
+    flex-shrink: 0;
+    color: var(--text-main, #212529);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 86.4px */
+    text-transform: uppercase;
+}
+
+.down {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    grid-template-rows: auto auto; /* Две строки */
+    gap: 20px; /* Расстояние между контейнерами */
+}
+
+.text-container {
+    grid-column: 1; /* Размещаем в первой колонке */
+    grid-row: 1; /* Размещаем в первой строке */
+}
+
+.hero-text-2 {
+    margin: 0;
+    color: var(--text-main, #212529);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+}
+
+.img-1 {
+    grid-column: 2; /* Размещаем во второй колонке */
+    grid-row: 1; /* Размещаем в первой строке */
+    height: 100%; /* Занимает всю высоту контейнера */
+}
+
+.img-2 {
+    margin-top: 260px;
+    grid-column: 1; /* Размещаем в первой колонке */
+    grid-row: 2; /* Размещаем во второй строке */
+}
+
+.about.us {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 300px;
+}
+
+
+.large-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--text-main, #212529);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* title/h2 */
+    font-family: Helvetica;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 285px;
+}
+
+.right-section {
+    flex: 2;
+    padding-left: 60px;
+}
+
+.vertical-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-list li {
+    margin-bottom: 10px;
+    color: var(--text-main, #212529);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* text/normal */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+/* .guarantee {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+} */
+
+.numeric-list li {
+    margin-top: 30px;
+}
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px; /* Размер крупной надписи */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение между изображениями */
+    align-items: center; /* Выравнивание изображений по вертикали по центру */
+}
+
+.svg-container img {
+  
+  
+    margin-right: 20px; /* Расстояние между изображениями */
+}
+
+.testi {
+/*     text-align: center; /* Центрируем содержимое горизонтально */
+    padding: 20px;
+}
+
+.large-text-2 {
+    font-size: 36px; /* Размер крупной надписи */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение между отзывами */
+    flex-wrap: wrap; /* Перенос на следующую строку, если не помещаются на экране */
+}
+
+.review {
+    width: calc(33.33% - 20px); /* 33.33% ширины контейнера минус 20px отступа */
+    padding: 20px;
+    border: 1px solid #ccc; /* Граница вокруг отзыва */
+    text-align: center; /* Центрирование текста и изображения */
+    margin-bottom: 20px; /* Расстояние между отзывами */
+}
+
+.review h2 {
+    font-weight: bold; /* Жирный шрифт для имени и фамилии */
+    margin-bottom: 15px; /* Расстояние между именем и текстом отзыва */
+}
+.Map {
+    text-align: center; /* Центрируем содержимое горизонтально */
+    padding: 20px;
+}
+
+.large-text {
+    font-size: 36px; /* Размер крупной надписи */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.map {
+    width: 100%; /* Ширина карты 100% для адаптивности */
+    max-width: 600px; /* Максимальная ширина карты */
+    margin: 0 auto; /* Центрируем карту горизонтально */
+}
+
+footer {
+   
+    text-align: center; /* Центрируем текст по горизонтали */
+    padding: 20px 0; /* Внутренний отступ сверху и снизу */
+}
+
+.left-footer {
+    float: left; /* Выравнивание надписи "© 2023 Aveji" влево */
+}
+
+.center-footer {
+    display: inline-block; /* Для центрирования и размещения по центру */
+    vertical-align: middle; /* Выравнивание по вертикали по центру */
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+.right-footer {
+    float: right; /* Выравнивание надписи "Все права защищены" вправо */
+}
