@@ -7,24 +7,44 @@
 
 header {
     display: flex;
-    align-items: center; /* Чтобы выровнять элементы по вертикали */
+    align-items: center;
     margin-left: 32px;
     margin-right: 32px;
     margin-top: 12px;
-    width: 1376px;
+    width: 100%; /* Ширина 100% для адаптивности */
     height: 108px;
     flex-shrink: 0;
 }
+
 nav {
     width: 98px;
     height: 108px;
-    margin-left: 861px;
+    margin-left: auto; /* Автоматическое выравнивание справа */
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     padding-top: 17px;
 }
+
+/* Добавим медиа-запросы для адаптивности */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Переключаем на вертикальное выравнивание */
+        align-items: flex-start;
+        text-align: center; /* Центрируем текст по центру */
+    }
+
+    nav {
+        margin-left: 0; /* Убираем правый отступ */
+        margin-top: 20px; /* Увеличиваем верхний отступ */
+    }
+    
+    /* Добавьте другие стили для мобильного экрана */
+}
+
+/* Добавьте другие медиа-запросы по мере необходимости */
+
 
 
 ul {
